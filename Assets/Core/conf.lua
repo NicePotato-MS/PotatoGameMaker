@@ -1,8 +1,7 @@
 
 
 function love.conf(t)
-    require("main-config")
-    t.identity = "PotatoGameMaker"                                -- The name of the save directory (string)
+    t.identity = "PotatoGameMakerGame/game"                                -- The name of the save directory (string)
     t.appendidentity = false                        -- Search files in source directory before save directory (boolean)
     t.version = "11.4"                              -- The LÖVE version this game was made for (string)
     t.console = false                               -- Attach a console (boolean, Windows only)
@@ -13,7 +12,7 @@ function love.conf(t)
     t.audio.mic = false                             -- Request and use microphone capabilities in Android (boolean)
     t.audio.mixwithsystem = true                    -- Keep background music playing when opening LOVE (boolean, iOS and Android only)
 
-    t.window.title = "Potato Game Maker - "..VERSION_TEXT                 -- The window title (string)
+    t.window.title = "Loading..."                 -- The window title (string)
     t.window.icon = nil                            -- Filepath to an image to use as the window's icon (string)
     t.window.width = 1280                           -- The window width (number)
     t.window.height = 720                           -- The window height (number)
@@ -51,5 +50,4 @@ function love.conf(t)
     t.modules.touch = true                          -- Enable the touch module (boolean)
     t.modules.video = true                          -- Enable the video module (boolean)
     t.modules.window = true                         -- Enable the window module (boolean)
-    require("Scripts/love-plus")
 end         
